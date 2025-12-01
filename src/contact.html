@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - MyBlog</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f7f5ff;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-purple {
+      background: #5a2dff;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #6a4bff, #b47bff);
+      color: white;
+      padding: 60px 0;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-purple {
+      background: #5a2dff;
+      color: white;
+      border-radius: 30px;
+    }
+
+    .btn-purple:hover {
+      background: #4a22d3;
+      color: white;
+    }
+
+    footer {
+      background: #5a2dff;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-purple py-3">
+    <div class="container">
+      <a href="/" class="navbar-brand fw-bold">✨ MyBlog</a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link active">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TOP BANNER -->
+  <section class="banner text-center">
+    <h1 class="fw-bold">Get in Touch</h1>
+    <p class="mt-2">We’d love to hear from you! Send your message below.</p>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <div class="container py-5 d-flex justify-content-center">
+    <div class="col-md-6 contact-card">
+
+      <h2 class="fw-bold mb-4 text-center">Contact Form</h2>
+
+      <form class="row g-3" method="GET" action="">
+        <div class="col-12">
+          <label class="form-label">Name</label>
+          <input class="form-control" type="text" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Email</label>
+          <input class="form-control" type="email" required>
+        </div>
+
+        <div class="col-12">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="5" required></textarea>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-purple w-100">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="mt-auto text-white text-center py-3">
+    © 2025 MyBlog — Designed with 💜
+  </footer>
+
+</body>
+
+</html>
